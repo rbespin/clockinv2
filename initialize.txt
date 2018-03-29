@@ -6,4 +6,4 @@ barcelona 0.0
 rubikscube 0.0
 lifting 0.0
 bargraph 0.0
-projects 0.0
+projects 24.383333333333333

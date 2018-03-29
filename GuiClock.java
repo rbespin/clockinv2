@@ -92,7 +92,7 @@ public class GuiClock extends Application{
          //EVENTS
 
          //event to handle full list 
-    /*     listStat.setOnAction(e ->{
+         listStat.setOnAction(e ->{
                try{
                GridPane gridPane = new GridPane();
                gridPane.setPrefSize(500,500);
@@ -178,7 +178,7 @@ public class GuiClock extends Application{
                scrollPane.setFitToHeight(true);
                mainPane.setCenter(scrollPane);
                }catch(IOException ex){};
-         });  */
+         });  
 
          //event to handle return to homepage button
          returnStat.setOnAction(e ->{
@@ -375,8 +375,21 @@ public class GuiClock extends Application{
                   }
                   newScanner.close();
 
+                  Time clockOutTime = new Time();
+                  double clockOut = Double.parseDouble(clockOutTime.getTime());
+                  double clockIn = map.get(key);
 
+                  if(clockOut<clockIn){
+                     clockOut = clockOut + 2400;
+                  }
+                  if(totalTimeMap.containsKey(key)){
+                     totalTime = totalTimeMap.get(key) + (clockOut - clockIn);
+                  }
+                  else{
+                     totalTime = clockOut - clockIn;
+                  }
 
+                  totalTimeMap.put(key, totalTime);
 
                   PrintWriter pw2 = new PrintWriter(new FileOutputStream(newFile, false));
                   for(String totalKey:totalTimeMap.keySet()){
