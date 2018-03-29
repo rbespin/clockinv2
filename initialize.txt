@@ -1,0 +1,9 @@
+math 0.0
+physics 0.0
+music 0.0
+english 0.0
+barcelona 0.0
+rubikscube 0.0
+lifting 0.0
+bargraph 0.0
+projects 0.0
