@@ -54,6 +54,11 @@ public class GuiClock extends Application{
    //from totalTimeMap, maybe in a cool display
 
 
+   public static void main(String[] args) throws IOException{
+      launch(args);
+   }
+
+
 
    @Override
       public void start(Stage primaryStage) throws IOException
@@ -281,7 +286,7 @@ public class GuiClock extends Application{
 
                if(!map.containsKey(lab.getText())){
                if(!matcherCheck.find()  && 
-                     lab.getText().chars().allMatch(Character::isLetter) &&
+                     /*     lab.getText().chars().allMatch(Character::isLetter) && */
                      (lab.getText() != "")){
                map.put(lab.getText().toLowerCase(), 0.0);
                initialize();
@@ -379,6 +384,7 @@ public class GuiClock extends Application{
                   double clockOut = Double.parseDouble(clockOutTime.getTime());
                   double clockIn = map.get(key);
 
+
                   if(clockOut<clockIn){
                      clockOut = clockOut + 2400;
                   }
@@ -467,15 +473,6 @@ public class GuiClock extends Application{
 
    }
 
-   public static void main(String[] args) throws IOException{
-      for(String key: map.keySet()){
-         System.out.print(key);
-         System.out.print(" ");
-         System.out.println(map.get(key));
-      }
-      launch(args);
-
-   }
 
 
 }

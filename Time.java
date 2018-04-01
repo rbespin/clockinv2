@@ -7,13 +7,16 @@ public class Time{
    public String date;
    public String time;
    public String name;
+   public int month;
+   public int day;
 
    public Time(){
       this.date = LocalDateTime.now().getMonthValue()
          + "/" + LocalDateTime.now().getDayOfMonth();
       this.time = LocalDateTime.now().getHour()*100 + LocalDateTime.now().getMinute() + 
-         ((double)LocalDateTime.now().getSecond() / 60 ) + "";// + 
-         //((double)LocalDateTime.now().getNano() / (1000000000*60));
+         ((double)LocalDateTime.now().getSecond() / 60 ) + "";
+      this.month = LocalDateTime.now().getMonthValue();
+      this.day = LocalDateTime.now().getDayOfMonth();
    }
 
    public Time(int time){
@@ -25,6 +28,14 @@ public class Time{
 
    public String getTime(){
       return this.time;
+   }
+
+   public int getMonth(){
+      return this.month;
+   }
+
+   public int detDay(){
+      return this.day;
    }
 
    @Override
