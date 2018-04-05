@@ -1,3 +1,4 @@
-projects 1421.85
 youtube 0.0
-dailies 1421.8666666666666
+projects 0.0
+184a 902.4
+dailies 0.0
