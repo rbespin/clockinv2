@@ -1,4 +1,7 @@
 youtube 0.0
 projects 0.0
-184a 902.4
+184a 0.0
 dailies 0.0
+math170b 0.0
+cse12 0.0
+184achapter5 0.0
