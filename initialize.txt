@@ -2,8 +2,7 @@ projects 0.0
 184a 0.0
 cse12 0.0
 184achapter5 0.0
+cse15lab3 0.0
+cse15l 0.0
 math170b 0.0
-math170bmidterm1 0.0
-170bch1.1 0.0
-170bch3.1 0.0
-170bch3.2 0.0
+ladymadonna 0.0
