@@ -3,3 +3,7 @@ cse12 0.0
 cse15l 0.0
 math170b 0.0
 week5 0.0
+184achapter6 0.0
+cse12pa3 0.0
+184achapter7 0.0
+184ahw3 0.0
