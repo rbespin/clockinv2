@@ -15,7 +15,6 @@ import java.io.*;
 import java.util.regex.*;
 import javafx.scene.chart.*;
 import java.util.Collections;
-import javafx.scene.image.Image;
 
 public class GuiClock extends Application{
 
@@ -66,7 +65,6 @@ public class GuiClock extends Application{
 	  {
 
 
-		 primaryStage.getIcons().addAll(new Image("clockinicon.png"));
 
 		 //SETTING SCENE
 		 mainPane = new BorderPane();
