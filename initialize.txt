@@ -5,3 +5,5 @@ math170b 0.0
 week10 0.0
 week10cse15l 0.0
 cse15lscript2 0.0
+week10cse12 0.0
+pa6 0.0
