@@ -1,9 +1,5 @@
-184a 0.0
-cse12 0.0
-cse15l 0.0
-math170b 0.0
-week10 0.0
-week10cse15l 0.0
-cse15lscript2 0.0
-week10cse12 0.0
-pa6 0.0
+math103a 0.0
+math184a 0.0
+cse20 0.0
+cse30 0.0
+cse30pa0 0.0
